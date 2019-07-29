@@ -1,0 +1,26 @@
+.Post-page {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.Post-page-card {
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	background-color: #eff0f0;
+	margin-top: 20px;
+	cursor: pointer;
+	}
+	@media screen and (max-width: 1025px) {
+	.Post-page-card {
+		margin-top: 20px;
+	}
+}
+
+.User-page-card {
+	cursor: default;
+}

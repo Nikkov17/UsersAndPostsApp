@@ -1,1 +1,2 @@
 # UsersAndPostsApp
+npm run start

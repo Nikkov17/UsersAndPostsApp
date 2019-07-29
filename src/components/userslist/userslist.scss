@@ -1,0 +1,34 @@
+.users-page {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 1025px) {
+	.users-page {
+		width: 95%;
+	}
+}
+
+.users-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 1025px) {
+	.users-list {
+		flex-direction: column;
+	}
+}
