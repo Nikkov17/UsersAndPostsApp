@@ -4,7 +4,6 @@ const getUsers = function () {
 		.then(json => {
 			return json;
 		});
-
 };
 
 const getPosts = function () {
