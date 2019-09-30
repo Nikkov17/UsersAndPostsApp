@@ -1,5 +1,7 @@
+import constants from './constants';
+
 const getUsers = function () {
-	return fetch(`https://jsonplaceholder.typicode.com/users`)
+	return fetch(constants.getUsersUrl)
 		.then(response => response.json())
 		.then(json => {
 			return json;
@@ -7,7 +9,7 @@ const getUsers = function () {
 };
 
 const getPosts = function () {
-	return fetch(`https://jsonplaceholder.typicode.com/posts`)
+	return fetch(constants.getPostsUrl)
 		.then(response => response.json())
 		.then(json => {
 			return json;

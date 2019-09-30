@@ -16,7 +16,7 @@ class PostsList extends React.Component {
 	render() {
 		const { history } = this.props;
 		const { postsList } = this.props;
-		const Ul = <ul className="posts-list">
+		const PostsListContent = <ul className="posts-list">
 			{postsList && postsList.list
 				? postsList.list.map((item) => <ListCard key={item.id} item={item} history={history} />)
 				: null}
@@ -25,7 +25,7 @@ class PostsList extends React.Component {
 		return (
 			<div className="posts-page">
 				<h1>Posts list:</h1>
-				{Ul}
+				{PostsListContent}
 			</div>
 		);
 	}

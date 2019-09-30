@@ -16,7 +16,7 @@ class UsersList extends React.Component {
 	render() {
 		const { usersList } = this.props;
 		const { history } = this.props;
-		const Ul = <ul className="users-list">
+		const userListContent = <ul className="users-list">
 			{usersList && usersList.list
 				? usersList.list.map((item) => <ListCard key={item.id} item={item} history={history} />)
 				: null}
@@ -25,7 +25,7 @@ class UsersList extends React.Component {
 		return (
 			<div className="users-page">
 				<h1>Users list:</h1>
-				{Ul}
+				{userListContent}
 			</div>
 		);
 	}

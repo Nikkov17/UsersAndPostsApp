@@ -3,14 +3,14 @@ const middleware = store => next => action => {
 		return next(action);
 	}
 
-	if(action.type.includes('getUsers')) {
+	if(action.type.includes('GET_USERS')) {
 		return action.promise.then((data) => store.dispatch({
-			type: 'UPDATE_Users',
+			type: 'UPDATE_USERS',
 			list: data
 		}));
-	} else if(action.type.includes('getPosts')) {
+	} else if(action.type.includes('GET_POSTS')) {
 		return action.promise.then((data) => store.dispatch({
-			type: 'UPDATE_Posts',
+			type: 'UPDATE_POSTS',
 			list: data
 		}));
 	}

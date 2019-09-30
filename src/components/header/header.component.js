@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.scss';
+import constants from '../../api/constants';
 
 class Header extends React.Component {
 	constructor(props) {
@@ -9,13 +10,13 @@ class Header extends React.Component {
 	}
 	
 	postsLinkClick() {
-		const url = `/posts`;
+		const url = constants.postsUrl;
 
 		this.props.history.push(url);
 	}
 
 	usersLinkClick() {
-		const url = `/users`;
+		const url = constants.usersUrl;
 
 		this.props.history.push(url);
 	}

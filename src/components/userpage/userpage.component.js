@@ -37,40 +37,41 @@ class UserPage extends React.Component {
 		}
 
 		if (users && users.length) {
+			const {name, email, phone, username, website, address, company, id} = users[0];
 			userCard = <div className="User-page-card Post-page-card">
 				<div className="card-text card-title">
 				Name:
-				{users[0].name}
+				{name}
 				</div>
 				<div className="card-text">
 				Email:
-				{users[0].email}
+				{email}
 				</div>
 				<div className="card-text">
 				Phone:
-				{users[0].phone}
+				{phone}
 				</div>
 				<div className="card-text">
 				Username:
-				{users[0].username}
+				{username}
 				</div>
 				<div className="card-text">
 				Website:
-				{users[0].website}
+				{website}
 				</div>
 				<div className="card-text">
 				Address:
-				{users[0].address.city} + {users[0].address.street} + {users[0].address.suite}
+				{address.city} + {address.street} + {address.suite}
 				Zipcode:
-				{users[0].address.zipcode}
+				{address.zipcode}
 				</div>
 				<div className="card-text">
 				Company:
-				{users[0].company.name}
+				{company.name}
 				</div>
 				<div className="card-text card-title">
 				User id:
-				{users[0].id}
+				{id}
 				</div>
 			</div>;
 		}
